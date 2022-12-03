@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Personal Portfolio - SaiKiran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/titleicon.png">
+</head>
+<body>
+ 
+    <div id="maincontainer">
+            <nav id="nav">
+                <img src="images/semologo.png" class="logo">
+                <ul id="menu">
+                    <li><a href="#maincontainer">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <img id="cross" src="images/xmark-solid.svg" style="height: 30px; width:30px;" class="navicons" onclick="closemenu()">
+                </ul>
+                <img src="images/bars-solid.svg"style="height: 30px; width:30px;" class="navicons" id="menuicon" onclick="openmenu()" >
+            </nav> 
+            <img src="images/sainayak.jpg" id="dp">
+           <section id="intro">
+            <p id="hello">Hello , I'm </p><br><br><p id="name">Sai Kiran</p><br></section><br>
+           
+        <div id="inner">
+            <div id="typinganimi">
+                <p id="iam">I'm a </p>
+                <div class="dyn"><ul><li>Web Developer</li>
+                <li>App Developer</li>
+                <li>Freelancer. . . </li></ul>
+            </div>
+        </div>
+               <div class="btns-container">
+                    <a href="images/saikiran-resume.pdf" download class="intro-btns" id="cvbtn" >Download CV</a><a href="#contact" id="hirebtn" class="intro-btns" >Hire me</a>
+               </div>
+    </div>
+    <!-- about section -->
+
+   <div id="aboutme">
+        <p class="title-txt" >About Me</p>
+        <p id="abt-para">Iam a computer Science Engineer who always wants to explore things and technologies with great intrest , can learn technologies and can gain technical knowledge rapidly . I have a keen intrest towards developing apps and websites and also solving coding challeges . My projects reflects my technical and creative abilites. 
+        </p>
+        <div id="about-table">
+            <div class="rowtabs">
+                <div class="tabs">
+                <button class="tab-btns active-btn" id="skills-btn"  onclick="skillsbtn()">Skills</button><button class="tab-btns" id="edu-btn" onclick="edubtn()">Education</button></div>
+            <div class="parent-content">
+                <div class="tabcontents active-content"  id="content1"> 
+                <div class="skill-parent">
+                    <div class="skill-set"><span><img src="images/globe-solid.svg" ></span><header>Web Development</header><div        class="list"><label>HTML</label>
+                        <img src="images/html5.svg">
+                    </div>
+                    <div class="list"><label>CSS</label>
+                        <img src="images/css3-alt.svg">
+                    </div>
+                    <div class="list"><label>JAVASCRIPT</label>
+                        <img src="images/js.svg">
+                    </div>
+                    </div>
+        
+                    <div class="skill-set"><span><img src="images/computer-solid.svg" ></span><header>Programming Languages</header><div class="list"><label>Java</label>
+                    <img src="images/java.svg">
+                    </div>
+                    <div class="list"><label>Python</label>
+                        <img src="images/python.svg">
+                        </div>
+                        <div class="list"><label>C++</label>
+                            <img src="images/c++.png">
+                        </div>
+                        <div class="list"><label>MySQL</label>
+                            <img src="images/mysql.png">
+                        </div>
+                    </div>
+                    <div class="skill-set"><span><img src="images/mobile-screen-solid.svg" ></span><header>Moblie Development</header><div class="list"><label>Android</label>
+                    <img src="images/android.svg">
+                    
+                    </div>
+                    <div class="list"><label>Kotlin</label>
+                        <img src="images/kotlin.png">
+                    </div>
+                    <div class="list"><label>Firebase</label>
+                        <img src="images/firebase.png">
+                    </div>
+                </div>
+                </div>
+                    
+               </div>
+        
+               <div class="tabcontents" id="content2">
+                <div class="leftcol educol">
+                <div class="edubox"><h5>2021 - 2024</h5><h4>Bachelor's Degree</h4><p>Computer Science and Engineering | Ace Engineering College , Hyderabad - 
+                   <i> CGPA : 8.33</i> </p>
+                </div>
+                <div class="edubox"><h5>2018 - 2021</h5><h4>Diploma</h4><p>Electrical and Electronics Engineering | Govt Polytechnic Masabtank ,
+                    Hyderabad - <i> CGPA : 8.79</i></p></div>
+                <div class="edubox"><h5>2018</h5><h4>High School</h4><p>X (SSC) | Amaravathi Grammar High School  - <i> CGPA : 9.8</i></p></div>
+                </div>
+                <div class="rightcol"><img src="images/education.png" id="edupng"></div>
+                </div>    
+               </div>
+           </div>
+        </div>
+   </div>
+   <!-- Projects section  -->
+   <div id="projects">
+        <h1 class="title-txt ptitle">Projects</h1>
+        <div class="project-list">
+        <div class="plist">
+<img class="workimg" src="images/portfolio.png">
+<div class="layer">
+    <h3>Personal Portfolio</h3>
+    <p>A well desinged and attractive , animated Personal portfolio website</p>
+    <a href="#maincontainer"><img src="images/link.svg" id="linkimg"></a>
+</div>
+        </div>
+        <div class="plist">
+            <img class="workimg" src="images/idcard.png">
+            <div class="layer">
+                <h3>Book Your Id Card</h3>
+                <p>An app for students to book their college id card online </p>
+                <a href="https://github.com/saikiran-panugothu/book-your-id-card" target="_blank"><img src="images/link.svg" id="linkimg"></a>
+            </div>
+             </div>
+        </div>
+   </div>
+   <!--contact section -->
+   <div id="contact">
+    <div class="contact-row">
+        <div class="left-row"><h1>Contact Me</h1>
+           <div class="phonediv">
+            <img src="images/phone-solid.svg" class="c-icons">
+            <span>+91 9182153899</span>
+           </div>
+           <div class="emaildiv">
+            <img src="images/envelope-solid.svg" class="c-icons"><span>sainayak020@gmail.com</span>
+           </div>
+  <a href="https://github.com/saikiran-panugothu" target="_blank"><img src="images/github.svg" class="s-links"></a><img src="images/linkedin.svg" class="s-links">
+    </div>
+        <div class="right-row">
+            <form action="">
+               <input type="text" placeholder="Your Name" required>
+               <input type="email" placeholder="E-mail" required>
+              <textarea name="message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+              <button class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="copyright">
+        copyright &copy; SaiKiran 2022
+    </div>
+   </div>
+ 
+  <script src="index.js"></script>
+</body>
+</html>
